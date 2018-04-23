@@ -1,0 +1,25 @@
+.jumbotron {
+  background-image: url("https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/31190096_1466054346840346_5170400794466113967_n.jpg?_nc_cat=0&oh=139943ef5c23a4e3b594479b5f88821e&oe=5B660CBF");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  position:absolute;
+  width: 100%;
+  background-color: #fff952;
+  color: black;
+  text-align: center;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+.panel-heading {
+  background-color: #ffc252 !important;
+}
+

@@ -1,0 +1,61 @@
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="row1">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        <h3>Available Burgers</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            {{#each burgers}} {{#unless devoured}}
+                            <p> • {{burger_name}} </p>
+                            <button type="submit" id="change-devour" class="btn btn-warning btn-devour" data-id="{{id}}" data-newdevour="{{devour}}">Devour</button>
+                            {{/unless}} {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="row2">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        <h3>Burgers Eaten</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="text-center">
+                            {{#each burgers}} {{#if devoured}}
+                            <p> • {{this.burger_name}}</p>
+                            {{/if}} {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <div class="col-md-4">
+            <div class="row3">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        <h3>Add Burger</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form class="form-inline text-center" id="create-form">
+                            <div class="form-group">
+                                <label for="create-burger"></label>
+                                <input type="text" class="form-control" id="create-burger">
+                            </div>
+                            <button type="submit" class="btn btn-default">Create Burger</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
