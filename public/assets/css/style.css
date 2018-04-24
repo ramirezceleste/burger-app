@@ -10,13 +10,12 @@
 footer {
   left: 0;
   bottom: 0;
-  position:absolute;
   width: 100%;
   background-color: #fff952;
   color: black;
   text-align: center;
-  padding-bottom: 12px;
-  padding-top: 12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .panel-heading {
