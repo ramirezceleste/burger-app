@@ -1,6 +1,6 @@
 $(function () {
 
-  $("#create-form").on("submit", function (event) {
+  $("#create").on("submit", function (event) {
       event.preventDefault();
       var newBurger = {
           name: $("#create-burger").val().trim(),
@@ -11,7 +11,6 @@ $(function () {
           data: newBurger
       }).then(
           function (data) {
-            //   console.log(data);
               location.reload();
           }
       );
@@ -23,7 +22,6 @@ $(function () {
         type: "PUT"       
       }).then(
         function() {
-        //   console.log("updated");
           location.reload();
         }
       );
